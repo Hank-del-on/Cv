@@ -1,13 +1,3 @@
-@import url(https://weloveiconfonts.com/api/?family=entypo|fontawesome);
-/* entypo */
-[class*="entypo-"]:before {
-  font-family: "entypo", sans-serif;
-}
-/* fontawesome */
-[class*="fontawesome-"]:before {
-  font-family: "FontAwesome", sans-serif;
-}
-
 /* Utils */
 
 /* body etc */
@@ -212,37 +202,6 @@ li:before {
   font-size: 14px;
   letter-spacing: 2px;
   padding-left: 7px;
-}
-
-.download_print_buttons {
-  width: 225px;
-  height: 45px;
-  float: right;
-}
-.download_print_buttons a {
-  text-decoration: none;
-  font-size: 12px;
-  font-family: "Lato", Helvetica, sans-serif;
-  font-style: italic;
-  line-height: 45px;
-  padding: 16px 17px;
-  background: #353638;
-}
-.download_print_buttons a:hover {
-  background: #020609;
-}
-.download_print_buttons .icon {
-  color: #02070a;
-  padding-right: 6px;
-  font-style: normal;
-  font-size: 18px;
-}
-.icon-angle-double-right {
-  position: relative;
-  top: 2px;
-}
-.download_print_buttons a:hover .icon {
-  color: #e4e3e8;
 }
 
 .header_menu {

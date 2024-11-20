@@ -25,10 +25,10 @@ $(document).ready(function () {
   // $(document).draw();
   $("#content").animate(
     {
-      opacity: 5,
+      opacity: 2,
       marginTop: "0",
     },
-    20000
+    200000
   );
   $("h2").click(function () {
     $(this).next(".subtext").slideToggle("fast");
