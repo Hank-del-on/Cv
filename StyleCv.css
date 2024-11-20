@@ -10,9 +10,8 @@
 
 /* Utils */
 
-.clear {
-  clear: both;
-}
+/* body etc */
+
 .purple {
   color: #837c9a;
 }
@@ -405,7 +404,6 @@ li:before {
   background-image: src("Stickman.jpg");
   background-size: cover; /* Scale image to cover the container */
   background-position: center; /* Center the image */
-  background: image-set(Stickman.jpg) 10% /50px no-repeat;
 }
 
 .profile_quote {
