@@ -28,7 +28,19 @@
   width: 1000px; /* Set the width of the card */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
+.my-button {
+  background-color: #d0cece(122, 39%, 49%); /* Green */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Padding */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Text size */
+}
 
+.my-button:hover {
+  background-color: #777d77; /* Darker green on hover */
+}
 @media (min-width: 768px) {
   margin-left: 110px;
 }
