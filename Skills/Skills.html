@@ -28,6 +28,12 @@
         background-color: #45a049;
       }
     </style>
+    <style>
+      #mediaPlayer {
+          display: none; /* Hide the player initially */
+          margin-top: 20px;
+      }
+  </style>
   </head>
   <body>
     <div class="container">
@@ -65,17 +71,34 @@
           </article>
           <article class="education-item">
             <i class="education-icon fa fa-graduation-cap"></i>
-            <h3 class="education-date">2018</h3>
+            <h3 class="education-date">2024</h3>
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title">
-                  <a href="">MSc in Computer Engineering</a>
+                    <a href="">MSc in Computer Engineering</a>
                 </h5>
-                <h6 class="card-subtitle"><a href="">link to website</a></h6>
-                <p class="card-text text-muted">2015 - 2018</p>
+                <h6 class="card-subtitle">
+                    <a href="">link to website</a>
+                </h6>
+                <p class="card-text text-muted">10/09/24 - 20/11/24</p>
                 <p class="card-text">
-                  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+                    <span style="color: red;">AAAAAAAAAAAAAAAAAAAAAAAA</span>
+                    <span style="color: blue;">AAAAAAAAAAAAAAAAAAAAAAAA</span>
+                    <span style="color: green;">AAAAAAAAAAAAAAAAAAAAAAAA</span>
+                    <span style="color: orange;">AAAAAAAAAAAAAAAAAAAAAAAA</span>
+                    <span style="color: purple;">AAAAAAAAAAAAAAAAAAAAAAAA</span>
                 </p>
+            </div>
+            <button class="my-button" type="button" onclick="handleButtonClick()">Click Me!</button>
+            
+            </div>
+            
+            <script>
+                function handleButtonClick() {
+                    alert("Button has been clicked!");
+                }
+            </script>
+            
                 <p class="card-text">
                   Link to
                   <a
@@ -99,6 +122,38 @@
                 <h6 class="card-subtitle"><a href="">link to website</a></h6>
                 <p class="card-text text-muted">2011 - 2015</p>
                 <p class="card-text">The usual</p>
+
+<button class="my-button" type="button" onclick="handleButtonClick()">Click Me!</button>
+
+<div id="player" style="display: none;"></div>
+
+<script src="https://www.youtube.com/iframe_api"></script>
+<script>
+    var player;
+
+    // This function creates an <iframe> (and YouTube player)
+    // after the API code downloads.
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+            height: '360',
+            width: '640',
+            videoId: 'tPEE9ZwTmy0', // YouTube video ID
+            events: {
+                'onReady': onPlayerReady,
+            }
+        });
+    }
+
+    function onPlayerReady(event) {
+        // This function will be called when the player is ready.
+    }
+
+    function handleButtonClick() {
+        var playerDiv = document.getElementById('player');
+        playerDiv.style.display = 'block'; // Show the player
+        player.playVideo(); // Start playing the video
+    }
+</script>
                 <p class="card-text">
                   Link to
                   <a

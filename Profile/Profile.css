@@ -1,12 +1,6 @@
 body {
-  margin: 0;
-  font-family: "Share Tech", sans-serif;
-  font-size: 16px;
-  color: #505050;
-  background: #eee;
-  overflow-x: hidden;
+  background-color: #646d72;
 }
-
 main {
   position: relative;
   padding: 7vh 0 10vh;

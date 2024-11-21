@@ -1,3 +1,22 @@
+body {
+  background-color: #506571;
+}
+.my-button {
+  background-color: #b0adad;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.my-button:hover {
+  background-color: #45a049;
+}
+#mediaPlayer {
+  display: none; /* Hide the player initially */
+  margin-top: 20px;
+}
 .education-item {
   border-left: 1px solid #f4f5f7;
   position: relative;
@@ -25,7 +44,8 @@
   padding: 20px; /* Padding inside the card */
   background-color: #d0cece; /* White background for the card */
   border-radius: 5px; /* Slightly rounded corners */
-  width: 1000px; /* Set the width of the card */
+  width: 1000px;
+  height: 250px; /* Set the width of the card */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 .my-button {
@@ -43,4 +63,20 @@
 }
 @media (min-width: 768px) {
   margin-left: 110px;
+}
+
+#player-container {
+  position: relative;
+  width: 100%; /* Full width */
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  display: none; /* Set to none initially */
+}
+
+/* The iframe will fill this container */
+#player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
